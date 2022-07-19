@@ -1,0 +1,366 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- Mirrored from bootstrap-ecommerce.com/documentation.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Apr 2022 03:22:36 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta http-equiv="cache-control" content="max-age=604800" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Documentation of bootstrap e-commerce ui kit html version</title>
+    <meta name="description" content="Documentation - How to use html templates for online shop on Bootstrap 5">
+    <meta name="keywords" content="guide, e-commerce, html css template, tutorial">
+
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+	<!-- Bootstrap-ecommerce -->
+    <link href="bootstrap5-ecommerce/css/bootstrapc3db.css?v=3.0" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap5-ecommerce/css/uic3db.css?v=3.0" rel="stylesheet" type="text/css"/>
+    <link href="bootstrap5-ecommerce/css/responsivec3db.css?v=3.0" rel="stylesheet" />
+
+    <!-- Font awesome 5 -->
+    <link href="bootstrap5-ecommerce/fonts/fontawesome/css/all.min.css" type="text/css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+    <link href="assets/css/style2d4c.css?v=2.3" rel="stylesheet" />
+
+</head>
+<body class="language-html">
+
+<!-- ========================= SECTION HEADER ========================= -->
+<header class="main-header fixed-top auto-hide bg-white">
+        <nav class="navbar navbar-light navbar-expand justify-content-between flex-column flex-md-row">
+            <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logo30f4.png?v=3" alt="Logo ecommerce uikit" class="logo" height="38">
+            </a>
+            <div class="navbar-top-wrap">
+                <ul class="nav nav-header">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#intro">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="components.html">Components</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="documentation.html">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="templates.html">Templates</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a class="btn btn-light d-none d-md-inline-block" target="_blank" href="#modal_hire" data-bs-toggle="modal">Hire me</a>
+                <a class="btn btn-primary d-none d-md-inline-block" target="_blank" href="https://templatemount.gumroad.com/l/bootstrap-ecommerce">Download</a>
+            </div>
+        </nav>
+</header>
+<!-- ================ SECTION HEADER END // ================ -->
+
+
+<!-- ===============  INFO ============== -->
+<section class="padding-bottom padding-top-lg bg-light mt-5">
+    <div class="container">
+
+        <header class="text-center section-heading">
+
+             <h2> Documentation </h2>
+             <p class="mx-auto" style="max-width:900px"> Easy to implement html/css library contains hundreds of components to build  ecommerce UI based on Bootstrap v5. If you're a front-end developer then you can use easily integrate with your template or layout just by including small css file. For more components and customization check <a target="_blank" href="https://getbootstrap.com/">Official Bootstrap website</a> </p>
+        </header>
+    </div> <!-- container.// -->
+</section>
+<!-- ============== INFO END .// ================ -->
+
+
+<section class="padding-y">
+	<div class="container" style="max-width: 980px">
+
+
+    <h4>File structure</h4>
+    <p>To start using this ecommerce design system you will first need to import some files in your project or download ready to use starter templates.</p>
+
+
+   
+    <pre class="bg-light">
+
+    &#128194; bootstrap-ecommerce-html/ 
+    │
+    ├── &#128194; fonts/
+    │   ├── fontawesome icons
+    │   ├── feather icons
+    │   └── other web fonts
+    │
+    ├── &#128194; plugins/
+    │   ├── fancybox
+    │   ├── sliders
+    │   └── ...
+    │
+    ├── &#128194; images/
+    │   ├── logo, banners, avatars, items
+    │   └── icons (png, svg)
+    │
+    ├── &#128194; scss/
+    │   ├── &#128194; bootstrap-scss/ <i class="text-muted">... bootstrap sass files </i>
+    │   ├── &#128194; ui-asets/ <i class="text-muted">... base, components, pages, sections,... </i>
+    │   ├── _variables-custom.scss
+    │   ├── bootstrap.scss
+    │   ├── responsive.scss
+    │   └── ui.scss
+    │
+    ├── &#128194; css/
+    │   ├── bootstrap.css
+    │   ├── responsive.css
+    │   └── ui.css
+    │
+    ├── &#128194;  js/
+    │   ├── bootstrap.bundle.min.js
+    │   └── script.js
+    │
+    └── &#128194;  HTML-components/ <i  class="text-muted">100+ html components ready to use</i>
+    └── 
+
+    &#128196;  page-blank.html
+    &#128196;  page-content.html
+    &#128196;  page-profile.html
+    &#128196;  page-user-signup.html
+    &#128196;  page-index-1.html
+    &#128196;  page-index-2.html
+    &#128196;  page-index-3.html
+    &#128196;  page-items-list.html
+    &#128196;  page-items-grid.html
+    &#128196;  page-detail.html
+    &#128196;  page-shopping-cart.html
+    ... more pages 
+
+    </pre>
+
+    <h4>CSS</h4>
+    <p>
+        Copy and paste the stylesheet <mark>&lt;link&gt;</mark> into your <mark> &lt;head&gt;</mark> before all other stylesheets to load our CSS.
+    </p>
+    <pre>
+    <code>
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;css/bootstrap.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+
+    &lt;!-- Fonticon (optional)--&gt;
+    &lt;link href=&quot;fonts/fontawesome/css/all.min.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot;&gt;
+
+    &lt;!-- components --&gt;
+    &lt;link href=&quot;css/ui.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;/&gt;
+    &lt;link href=&quot;css/responsive.css&quot; rel=&quot;stylesheet&quot; /&gt;
+    </code>
+    </pre>
+
+    <h4>JS</h4>
+    <p>
+    Most of bootstrap components require the use of JavaScript to function.  Our <mark> script.js</mark> file contains some additional scripts which may come handy for your project. But it is optional
+    </p>
+    <pre>
+    <code>
+
+    &lt;!-- Bootstrap --&gt;
+    &lt;script src=&quot;js/bootstrap.bundle.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+    &lt;!-- custom javascript (optional) --&gt;
+    &lt;script src=&quot;js/script.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
+    </code>
+    </pre>
+    <h4>Starter templates</h4>
+    <p>
+    There are some basic templates made for you quickly start e-commerce project. <br> <mark> page-blank.html </mark>, <mark> page-content.html </mark>, <mark> page-index-1.html </mark> ... and other sample pages are included.
+
+    </p>
+    <p>You can play around, make any changes or create your own template. Also feel free to add any component from the folder &#128194; _HTML-Components</p>
+    
+    <h4>How to add new components?</h4>
+    <p>There is a file &#128194; <b>_HTML-components</b> which contains all components you need for your peoject <br> 
+    Just copy html source and past into your template. <br> <b>Remember:</b> your template must include our css files <i class="text-muted">(ui.css, responsive.css and bootstrap.css )</i>. <br>
+    After doing copy/paste also check links and image path, For example there might be path like "../images". 
+    </p>
+
+
+    <h4>Changing themes and styles </h4>
+
+    <p>We keep all original sass files of bootstrap framework. It is recommended to make changes on variables. There is a sass file <mark>_variables-custom.scss</mark> which contains all theme and styling values </p>
+
+    
+    <pre>
+
+    your-project/
+       ├── &#128194; scss/
+       │   ├── &#128194; bootstrap-scss/  <i class="text-muted">(original bootstrap styles)</i>
+       │   ├── &#128194; ui-asets/  
+       │   ├──  _variables-custom.scss 
+       │   ├── ...
+       │   └── ...
+    </pre>
+
+    <p>You can also add your custom styles into one of those files inside &#128194; ui-assets/ folder.</p>
+    Make sure that you have compiled sass(scss) into normal css, And it is updated into &#128194; css/ folder. Sometimes compiler's output path are same with sass folder. You have to check and make sure it has correct output path which is /css folder
+    <p>If you are not fan of node and npm stuff, then we'd recommend to use apps like Prepros ( https://prepros.io  ) or Codekit (https://codekitapp.com/) or any other </p>
+
+
+    <hr>
+    
+    <h4>License information</h4>
+    <p> We offer two kind of license: Basic license and Pro license. </p>
+
+    <h5>Basic license</h5>
+    <h6> &#x2705; Rights</h6>
+    <ul class="list-unstyled">
+        <li>1. You are allowed to make necessary modification(s) to our templates to fit your purpose for personal or client project.</li>
+        <li>2. Can be used in single SAAS and Open source projects.</li>
+        <li>3. Use the template for a single personal or commercial project. (But not allowed to
+    resell as another product)</li>
+        <li>4. You are not required to indicate our site as an attribute when using the purchased
+    product.</li>
+        <li> 5. We (creators of item) will not be responsible for any outcome that may occur during
+    the course of usage of our resources. But we are happy to support you during the development.</li>
+    </ul>
+
+    <h6> &#x274C; Prohibitions</h6>
+    <ul class="list-unstyled">
+        <li>1. For any resalable web applications or software programs, you should not include our graphic resources as an additional attachment.  </li>
+        <li>2. You do not have the rights to redistribute, resell, license or sub-license or offer the file downloaded to any third party. </li>
+    </ul>
+
+    <p><b>Note:</b> <i>All above terms are for owners of Basic license only, We also have Pro license option which is for multi use for personal or any commercial projects.</i></p>
+
+    <hr>
+
+    <h5>Pro license</h5>
+
+    <h6> &#x2705; Rights</h6>
+    <ul class="list-unstyled">
+        <li>1. You can build another product based on a Downloaded item from Bootstrap-ecommerce.com (via Gumroad payment gateway) and you have rights for royalty free use of your product for any or all of your personal and commercial projects. </li>
+        <li>2. You can modify or manipulate the Item according to your requirements and use them for your personal and commercial projects. For example: you can create Themes for CMS and sell on marketplaces. </li>
+        <li>3. You are not required to attribute or link to Bootstrap-ecommerce.com </li>
+        <li>4. Creators of Bootstrap Ecommerce UI Kit will not be responsible for any outcome that may occur during the course of usage of our resources. </li>
+        <li>5. You can Sell and make any number of copies of the single End product. (But remember: You should build something unique or create your style based on this Ecommerce UI Kit) </li>
+        <li>6. We reserve the rights to change prices and revise the resources usage policy at any moment. </li>
+        <li>7. You may use an Item multiple times, in multiple projects. </li>
+    </ul>
+
+    <h6> &#x274C; Prohibitions</h6>
+    <ul class="list-unstyled">
+        <li>1. For any resalable web applications or software programs, you should not include our graphic resources as an additional attachment.</li>
+        <li>2. You do not have the rights to redistribute, resell, license or sub-license or offer the file downloaded to any third party. In other words, you should build something unique or create your style based on this Ecommerce UI Kit and sell it as you want.</li>
+    </ul>
+
+    <p><b>Note:</b> <i>All above terms are for owners of Pro license only, We also have Basic license option which is single use only for personal or client project.</i></p>
+
+    Link to download with pro license: <a target="_blank" href="https://templatemount.gumroad.com/l/bootstrap-ecommerce?variant=Pro%20license"> Download with pro license</a>
+
+    <hr>
+    <h4> FAQs</h4>
+    <article>
+       <h6> What is TemplateMount.com ?</h6>
+        <p>Our main goal is mainly to produce premium class practical design assets and templates in the field of E-commerce and constantly improve them.</p>
+    
+        <h6>Do you provide refunds?</h6>
+        <p>Yes, We issue refunds only if you can show that the file is corrupt on your end and cannot be used.
+        Due to the nature of digital downloads, there are no refunds and credits once an order is placed and the product is sent, especially if: <br>
+        › You changed your mind about an item; <br>
+        › You bought an item by mistake. <br>
+        › You do not have sufficient expertise to use an item.</p>
+
+        <h6>How can I download TemplateMount products again if I lost the file?</h6>
+        <p>Log into your Gumroad to access your library. Click on any TemplateMount product to get its latest version. Login here https://gumroad.com/library</p>
+        
+        <h6>Can I create my own template or theme based on your products?</h6>
+        <p>You have to contact the author and authorI will guide you. For that purpose you need a Pro license which gives extended permission.</p>
+        
+        <h6>I want to create my digital product based on this UI Kit, what should I do?</h6>
+        <p>For that purpose you need a Pro license which gives extended permission.</p>
+
+        <h6>Can I create a SAAS product based on TemplateMount products?</h6>
+        <p> Yes, of course.</p>
+
+        <h6>Are there any discounts for students?</h6>
+        <p>We have announced a 50% discount on each of our products to support students. You will be required to submit a student ID to purchase at this discount rate.
+        
+        <h6>I have a problem with your products. How can I get help?</h6>
+        <p> We are here to help. Contact us via below given information.</p>
+    </article>
+
+    <hr>
+    <h4>Support</h4>
+    <p>
+     Feel free to reach us if you need any assistance. <br>
+     Company email: templatemount@gmail.com  <br>
+     Author's email: vosidiy@gmail.com 
+    </p>
+
+
+    </div> <!-- container .//  -->
+</section>
+
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="section-footer border-top bg-white padding-y-sm">
+    <div class="container">
+        <p class="text-center mt-3"><img alt="Logo ecommerce uikit"  src="assets/images/logo.png" height="38">
+            <br>
+            <a class="mt-3 d-md-inline-block text-black-50" href="index-2.html">Bootstrap-ecommerce.com</a>
+        </p>
+    </div><!-- //container -->
+</footer>
+<!-- ========================= FOOTER END // ========================= -->
+
+
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" id="modal_hire" role="dialog">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Contact author</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-check-custom">
+                    <li>UI/UX designing for Web &amp; Mobile </li>
+                    <li>Converting your design into valid HTML5/CSS code</li>
+                    <li>Customize this UI kit for your project</li>
+                    <li>Have touble with downloading?</li>
+                </ul>
+                <p>Portfolio: <a href="http://dribbble.com/vosidiy" target="_blank">Dribbble.com/vosidiy</a> 
+                    or <a href="http://behance.com/vosidiy" target="_blank">Behance.com/vosidiy</a><br>
+                    Email me: vosidiy@gmail.com <br>
+                    Telegram chat: <a href="https://t.me/vosidiy" target="_blank">@vosidiy</a>
+                </p>
+                <p class="text-success">I will reply during the day</p>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- modal.// -->
+
+
+<!-- JS -->
+<script src="assets/js/bootstrap.bundle.min30f4.js?v=3" type="text/javascript"></script>
+<script src="assets/js/script30f4.js?v=3" type="text/javascript"></script>
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "../mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(87410011, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/87410011" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+
+<!-- Mirrored from bootstrap-ecommerce.com/documentation.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 12 Apr 2022 03:22:36 GMT -->
+</html>

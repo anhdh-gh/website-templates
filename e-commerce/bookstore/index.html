@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Gác Xép Bookstore">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gác Xép Bookstore</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="css/elegant-icons.css" type="text/css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.0/css/nice-select.css" integrity="sha512-CXpG+Gken+hm46EPSTz5k5qMNRnOIzUpFSH5xWepo0IlhhgwANPdsahptTgGWIFsbeaNyMjxmFvug2ATAc8KDA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/slicknav.min.css" integrity="sha512-heyoieAHmpAL3BdaQMsbIOhVvGb4+pl4aGCZqWzX/f1BChRArrBy/XUZDHW9WVi5p6pf92pX4yjkfmdaIYa2QQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+    <div class="humberger__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <a href="#"><img src="https://lh3.googleusercontent.com/pw/AM-JKLXL4tTHqDR1st8reCgjf8AOapE76sCbIuT2jeCWuLvLbYDiK8QTXHW2NxhT4VnMczkkt_DVQPMEUHrzyFOSY5VrxXvp3_mDRCTevOBDil2eUD7nCDyedqpwm17TmyU8CjkXzL_i_0YRsJjSpJmtOf8=w1920-h715-no?authuser=4" alt=""></a>
+        </div>
+        <div class="humberger__menu__cart">
+            <ul>
+                <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                <li><a href="./shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span>4</span></a></li>
+            </ul>
+            <div class="header__cart__price">item: <span>$150.00</span></div>
+        </div>
+        <div class="humberger__menu__widget">
+            <div class="header__top__right__language">
+                <img src="img/language.png" alt="">
+                <div>English</div>
+                <span class="arrow_carrot-down"></span>
+                <ul>
+                    <li><a href="#">VietNam</a></li>
+                    <li><a href="#">English</a></li>
+                </ul>
+            </div>
+            <div class="header__top__right__language mr-4">
+                <div href="#"><i class="fa fa-user mr-1"></i> Quân Nguyễn
+                    <ul>
+                        <li><a href="#">Profile</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul></div>
+            </div>
+        </div>
+        <nav class="humberger__menu__nav mobile-menu">
+            <ul>
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./shop-grid.html">Shop</a></li>
+                <li><a href="#">Pages</a>
+                    <ul class="header__menu__dropdown">
+                        <li><a href="./shop-details.html">Shop Details</a></li>
+                        <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                        <li><a href="./checkout.html">Check Out</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="header__top__right__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        </div>
+        <div class="humberger__menu__contact">
+            <ul>
+                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                <li>Free Shipping for all Order of $99</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Humberger End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> hello@colorlib.com</li>
+                                <li>Free Shipping for all Order of $99</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__language">
+                                <img src="img/language.png" alt="">
+                                <div>Tiếng Việt</div>
+                                <span class="arrow_carrot-down"></span>
+                                <ul>
+                                    <li><a href="#">Tiếng Việt</a></li>
+                                    <li><a href="#">English</a></li>
+                                </ul>
+                            </div>
+                            <div class="header__top__right__language mr-4">
+                                <div href="#"><i class="fa fa-user mr-1"></i> Quân Nguyễn
+                                    <ul>
+                                        <li><a href="#">Profile</a></li>
+                                        <li><a href="#">Logout</a></li>
+                                    </ul></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img style="width: 50%" src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="./index.html">Home</a></li>
+                            <li><a href="./shop-grid.html">Shop</a></li>
+                            <li><a href="#">Pages</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="./shop-details.html">Shop Details</a></li>
+                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
+                                    <li><a href="./checkout.html">Check Out</a></li>
+                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
+                            <li><a href="./shoping-cart.html"><i class="fa fa-shopping-bag"></i> <span id = "sizeOfCart">0</span></a></li>
+                        </ul>
+                        <div class="header__cart__price">item: <span>$150.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Danh mục sản phẩm</span>
+                            <i class="fa fa-angle-down ml-4"></i>
+                        </div>
+                        <ul style="text-transform: capitalize;">
+                            <li><a href="#">Văn học</a></li>
+                            <li><a href="#">Kinh tế</a></li>
+                            <li><a href="#">Tâm lý - Kỹ năng sống</a></li>
+                            <li><a href="#">Nuôi dạy con</a></li>
+                            <li><a href="#">Sách thiếu nhi</a></li>
+                            <li><a href="#">Thường thức - đời sống</a></li>
+                            <li><a href="#">Khoa học</a></li>
+                            <li><a href="#">Sách ngoại ngữ</a></li>
+                            <li><a href="#">Truyện, hồi kí</a></li>
+                            <li><a href="#">Sách chuyên ngành</a></li>
+                            <li><a href="#">Tạp chí, văn phòng phẩm</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__search">
+                        <div class="hero__search__form">
+                            <form action="" method="GET">
+                                <div class="hero__search__key">
+                                        <select name="typeSearch" id="">
+                                            <option value="book">Book</option>
+                                            <option value="electronic">Electronic</option>
+                                            <option value="clothes">Clothes</option>
+                                            <option value="shoes">Shoes</option>
+                                        </select>
+                                </div>
+                                <input type="text" name = "keySearch" placeholder="What do you need?">
+                                <button type="submit" class="site-btn">SEARCH</button>
+                            </form>
+                        </div>
+                        <div class="hero__search__phone">
+                            <div class="hero__search__phone__icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="hero__search__phone__text">
+                                <h5>+65 11.188.888</h5>
+                                <span>Hỗ trợ 24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero__item set-bg" data-setbg="img/books/banner.jpg">
+                        <div class="hero__text">
+                            <span>BIG SALE</span>
+                            <h2>Autumn <br />Book Festival</h2>
+                            <p>Let's fill up your bookshelf</p>
+                            <a href="#sachBanChay" class="primary-btn">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Categories Section Begin -->
+    <section class="categories">
+        <div class="container">
+            <div class="row">
+                <div class="categories__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-tuoi-tre-dang-gia-bao-nhieu.png">
+                            <h5><a href="#">Kỹ năng sống</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-toi-thay-hoa-vang-tren-co-xanh.png">
+                            <h5><a href="#">Truyện, hồi kí</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-ky-nang-ban-hang-tuyet-dinh.png">
+                            <h5><a href="#">Kinh doanh</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-khu-vuon-bi-mat.png">
+                            <h5><a href="#">Văn học</a></h5>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="categories__item set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-he-thong-giao-dich-ichimoku.png">
+                            <h5><a href="#">Khoa học</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Categories Section End -->
+
+    <!-- Featured Section Begin -->
+    <section class="featured spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" id="sachBanChay">
+                    <div class="section-title">
+                        <h2>Sách bán chạy</h2>
+                    </div>
+                    <div class="featured__controls">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".oranges">Văn học</li>
+                            <li data-filter=".fresh-meat">Khoa học</li>
+                            <li data-filter=".vegetables">Truyện</li>
+                            <li data-filter=".fastfood">Kỹ năng sống</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row featured__filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-cuoc-song-dech-giong-cuoc-doi.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Cuộc sống đếch giống cuộc đời</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fastfood">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-mat-biec.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Mắt biếc</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix vegetables fresh-meat">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-cho-toi-xin-mot-ve-di-tuoi-tho.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Cho tôi xin một vé đi tuổi thơ</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood oranges">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-luoc-su-thoi-gian.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Lược sử thời gian</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item" id="1">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-nhung-ngay-tho-au.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a onclick="addToCart(1)"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a class = "bookName" href="#">Những ngày thơ ấu</a></h6>
+                            <h5>$<span class = "price">30.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fastfood">
+                    <div class="featured__item" id = "2">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-dung-lua-chon-an-nhan-khi-con-tre.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a onclick="addToCart(2)"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#" class = "bookName">Đừng lựa chọn an nhàn khi còn trẻ</a></h6>
+                            <h5>$<span class = "price">30.00</span></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fresh-meat vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-khu-vuon-bi-mat.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Khu vườn bí mật</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix fastfood vegetables">
+                    <div class="featured__item">
+                        <div class="featured__item__pic set-bg"
+                            data-setbg="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-khong-gia-dinh.png">
+                            <ul class="featured__item__pic__hover">
+                                <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                                <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="featured__item__text">
+                            <h6><a href="#">Không gia đình</a></h6>
+                            <h5>$30.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Section End -->
+
+    <!-- Banner Begin -->
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="https://lh3.googleusercontent.com/pw/AM-JKLXqL1WLaYHvei3G2FqxvzI27trgaOWeKb09ilMVfQGS326AfMwNUkmC7JnsIr6f2CozBG8Lvp2eYpYZhw-kjU1PQaG0vphbg0nE1xPiHqJaYsiwNaBoL1R9QqYnKu6EjkIGsxj5j6VjIAoJkMzaRUw=w1728-h713-no?authuser=4" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="banner__pic">
+                        <img src="https://lh3.googleusercontent.com/pw/AM-JKLVQDIDBEnI5xGTBpAcykP2S7OA8hXuj2P3d3hyVaBe0_JGRaD1FWotsBfTiYtRHB7UjagO3jgNV98sRxQ4zzJQzNaGNvW8xkqJ2irArEKWsZ1ZFQVC08Ho1fKMl0ZYUbQlF4m3Yosfr6iCgk3uLIzA=w1728-h714-no?authuser=4" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Latest Product Section Begin -->
+    <section class="latest-product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Sách mới về</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-nhung-dieu-cam-ky-khi-giao-tiep-voi-khach-hang.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Những cấm kị khi giao tiếp với khách hàng</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-thau-hieu-nguoi-mua-giai-ma-tang-truong.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Thấu hiểu người mua, giả mã tăng trưởng</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-lam-chu-nghe-thuat-ban-hang.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Làm chủ nghệ thuật bán hàng</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-loi-the-ban-hang.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lợi thế bán hàng</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-100-y-tuong-ban-hang-hay-nhat-moi-thoi-dai.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>100 ý tưởng bán hàng hay nhất mọi thời đại</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/0403202160410b686246c.JPEG"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Fibonacci trading</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Top đánh giá</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-toi-thay-hoa-vang-tren-co-xanh.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Tôi thấy hoa vàng trên cỏ xanh</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-tuoi-tre-dang-gia-bao-nhieu.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Tuổi trẻ đáng giá bao nhiêu</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-cho-toi-xin-mot-ve-di-tuoi-tho.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Cho tôi xin một vé đi tuổi thơ</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-cafe-cung-tony.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Cà phê cùng Tony</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-luoc-su-thoi-gian.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Lược sử thời gian</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-dac-nhan-tam.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Đắc nhân tâm</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest-product__text">
+                        <h4>Giảm giá sâu</h4>
+                        <div class="latest-product__slider owl-carousel">
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-7-thoi-quen-hieu-qua.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>7 thói quen hiệu quả</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-hom-nay-ta-giau-co.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Hôm nay ta giàu có</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-chia-khoa-thanh-cong.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Chìa khóa thành công</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="latest-prdouct__slider__item">
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-nha-gia-kim.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Nhà giả kim</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-100-y-tuong-ban-hang-hay-nhat-moi-thoi-dai.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>100 ý tưởng bán hàng hay nhất mọi thời đại</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="latest-product__item">
+                                    <div class="latest-product__item__pic">
+                                        <img src="https://cuahang.revisach.com/wp-content/uploads/2021/03/sach-quang-ganh-lo-di-va-vui-song.png"
+                                            alt="">
+                                    </div>
+                                    <div class="latest-product__item__text">
+                                        <h6>Quẳng gánh lo đi và vui sống</h6>
+                                        <span>$30.00</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Product Section End -->
+
+    <!-- Blog Section Begin -->
+    <section class="from-blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title from-blog__title">
+                        <h2>Cafe sách</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="https://revisach.com/wp-content/uploads/2021/07/van-nan-sach-gia.png" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">Vấn nạn sách giả và 5 tips phân biệt sách thật với sách giả</a></h5>
+                            <p>Theo thông tin được công bố gần đây bởi ông Nguyễn Văn Phước – Giám đốc Công ty sách
+                                First News (Top đầu thương hiệu xuất bản được ... </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="https://revisach.com/wp-content/uploads/2021/07/ly-do-nen-mua-sach-cu.png" alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">8 lý do bạn nên mua sách cũ thay vì sách mới</a></h5>
+                            <p>Hiện nay, mặc dù có rất nhiều phương thức đọc sách tiện lợi như đọc qua ứng dụng điện
+                                thoại, máy đọc sách, nghe sách nói,… </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="blog__item">
+                        <div class="blog__item__pic">
+                            <img src="https://revisach.com/wp-content/uploads/2021/07/sai-lam-khi-doc-sach-self-help.png"
+                                alt="">
+                        </div>
+                        <div class="blog__item__text">
+                            <ul>
+                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
+                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            </ul>
+                            <h5><a href="#">5 sai lầm phổ biến khi đọc sách Self-help có thể bạn cũng mắc phải</a></h5>
+                            <p>Marketdata Enterprises, Inc. – Một tập đoàn nghiên cứu thị trường hàng đầu đã có báo cáo
+                                chỉ ra rằng: Ngành công nghiệp sách self-help đang ... </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="https://lh3.googleusercontent.com/pw/AM-JKLXL4tTHqDR1st8reCgjf8AOapE76sCbIuT2jeCWuLvLbYDiK8QTXHW2NxhT4VnMczkkt_DVQPMEUHrzyFOSY5VrxXvp3_mDRCTevOBDil2eUD7nCDyedqpwm17TmyU8CjkXzL_i_0YRsJjSpJmtOf8=w1920-h715-no?authuser=4" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Address: 60-49 Road 11378 New York</li>
+                            <li>Phone: +65 11.188.888</li>
+                            <li>Email: hello@colorlib.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Useful Links</h6>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">About Our Shop</a></li>
+                            <li><a href="#">Secure Shopping</a></li>
+                            <li><a href="#">Delivery infomation</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Our Sitemap</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Who We Are</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Innovation</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Join Our Newsletter Now</h6>
+                        <p>Get E-mail updates about our latest shop and special offers.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">Subscribe</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer__copyright">
+                        <div class="footer__copyright__text">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                        <div class="footer__copyright__payment"><img src="img/payment-item.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Modal Login -->
+    <div class="modal fade modalLogin" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <img class="login__logo" src="./img/books/logo_Login.png" />
+                        <h4>Login</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form method = "post" action = "login">
+                            <div class="form-group">
+                                <input required type="email" class="form-control" id="email" placeholder="Email đăng nhập">
+                            </div>
+                            <div class="form-group">
+                                <input required type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"
+                                style="background-color: #e98156;">Login</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">hoặc đăng nhập bằng</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                                title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                                title="Gmail">
+                                <i class="fa fa-google"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <div class="signup-section close" data-dismiss="modal">Chưa có tài khoản? 
+                        <a aria-hidden="true" href="#" data-toggle="modal" data-target="#registerModal" style="color:#e98156"> Sign Up</a>.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div class="modal fade modalLogin w-60" id="registerModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="form-title text-center">
+                        <img class="login__logo" src="./img/books/logo_Login.png" />
+                        <h4>Register</h4>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form method="POST" action="register">
+                            <div class="form-group">
+                                <input required type="text" class="form-control" name="fullName" placeholder="Họ tên">
+                            </div>
+                            <div class="form-group">
+                                <input required type="text" class="form-control" name="userName" placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="container">
+                                <div class="form-group row">
+                                    <div class="col-6 pl-0 pr-1">
+                                        <input required type="password" class="form-control" name="password" placeholder="Mật khẩu">
+                                    </div>
+                                    <div class="col-6 pr-0 pl-1">
+                                        <input required type="password" class="form-control" name="passwordConfirm" placeholder="Xác nhận mật khẩu">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="form-group row">
+                                    <div class="col-6 pl-0 pr-1">
+                                        <input required type="email" class="form-control" name="email" placeholder="Email">
+                                    </div>
+                                    <div class="col-6 pr-0 pl-1">
+                                        <input required type="text" class="form-control" name="phoneNumber" placeholder="Số điện thoại">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="form-group row">
+                                    <div class="col-4 px-0 pr-1">
+                                        <input required type="text" class="form-control" name="province" placeholder="Tỉnh/Thành phố">
+                                    </div>
+                                   <div class="col-4 px-1">
+                                        <input required type="text" class="form-control" name="district" placeholder="Quận/Huyện">
+                                   </div>
+                                    <div class="col-4 px-0 pl-1">
+                                        <input required type="text" class="form-control" name="ward" placeholder="Phường/Xã">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input required type="text" class="form-control" name="address" placeholder="Địa chỉ nhà">
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block"
+                                style="background-color: #e98156;">Sign up</button>
+                        </form>
+
+                        <div class="text-center text-muted delimiter">hoặc đăng ký bằng</div>
+                        <div class="d-flex justify-content-center social-buttons">
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                                title="Twitter">
+                                <i class="fa fa-twitter"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                                title="Facebook">
+                                <i class="fa fa-facebook"></i>
+                            </button>
+                            <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top"
+                                title="Gmail">
+                                <i class="fa fa-google"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Js Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.0/js/jquery.nice-select.min.js" integrity="sha512-Q27qmhQTPA7DBhZVnJnSovHMSbhSBaUMsY3nzQeCHaxbAE7AM4HD7+tdWeA6JtgZBXlHd6jYVa3QKlPDf33MsA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js" integrity="sha512-AmJ0T6lpw/ZQtCleMyfbraDy8AGQ9tWaB/PmRkXdKxH9Kvo0oTuW6+2hTEQ89mHkFIO/LpColEe3+QE+FJtgIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
